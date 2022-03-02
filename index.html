@@ -13,9 +13,11 @@
       <div class="background">
         <img src="/img/background.jpg" alt="background" />
         <div class="transparent-bg"></div>
-        <img src="/img/odin-logo.png" alt="logo" />
-        <p>ODIN</p>
-        <p>
+        <div class="logo-text">
+          <img src="/img/odin-logo.png" alt="logo" />
+          <p class="odin">ODIN</p>
+        </div>
+        <p class="credit">
           Photo by
           <a
             href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -35,39 +37,51 @@
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams.
           </p>
-          <p>Sign up now to get started.</p>
-          <p>You know you want to</p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to.</p>
         </div>
         <div class="form">
-          <p>Let's do this</p>
+          <p>Let's do this!</p>
           <form action="#" method="post">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" />
+            <div class="input">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
 
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" />
+            <div class="input">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
 
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" />
+            <div class="input">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
+            </div>
 
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="text" id="phone-number" name="phone-number" />
+            <div class="input">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="text" id="phone-number" name="phone-number" />
+            </div>
 
-            <label for="password">PASSWORD</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              class="error"
-            />
+            <div class="input">
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="error"
+              />
+            </div>
 
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-              class="error"
-            />
+            <div class="input">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                class="error"
+              />
+            </div>
           </form>
         </div>
         <div class="bot-part">

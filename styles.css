@@ -23,12 +23,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--border-color);
+  background-color: #f0f0f0;
 }
 
 .container {
   display: flex;
-  gap: 20px;
 }
 
 .background {
@@ -42,17 +41,9 @@ img:nth-child(1) {
 }
 
 /* styling the transparent bg with logo inside */
-.transparent-bg,
-img:nth-of-type(2),
-.background > p:nth-of-type(1) {
+.transparent-bg {
   position: absolute;
   top: 0;
-}
-
-.background > p:nth-of-type(2) {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
 }
 
 /* the transparent bg in image */
@@ -64,27 +55,95 @@ img:nth-of-type(2),
 }
 
 /* resize the logo */
-img:nth-of-type(2) {
+.logo-text > img {
   width: 100px;
   height: auto;
-  margin-left: 40%;
   padding-top: 10px;
 }
 
-/* text for the credit image and the logo text */
-.background > p {
+/* edit the odin text */
+.odin {
+  margin: 0;
+  color: white;
+  font-size: 80px;
+  font-family: font-logo;
+}
+
+/* text for the credit image */
+.credit {
   color: white;
   width: 100%;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
 }
 
 /* set the logo, transparent background, and odin text position */
 .transparent-bg,
-img:nth-of-type(2),
-.background > p:nth-of-type(1) {
-  top: 25%;
+.logo-text {
+  position: absolute;
+  top: 22%;
+}
+
+/* styling the logo img and odin text */
+.logo-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
+}
+
+/* styling the text in top part */
+.top-part > p:nth-child(1),
+.top-part > p:nth-child(2) {
+  margin: 0;
+}
+
+.top-part > p:nth-child(1) {
+  margin-top: 150px;
+}
+
+.top-part > p:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+.top-part > p,
+.form > p {
+  font-family: my-font;
+  font-size: 1.3rem;
+}
+/* end of the text styling */
+
+.form {
+  background-color: white;
+  padding: 5px 0 40px 0;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  font-family: my-font;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.top-part,
+.form,
+.bot-part {
+  padding-left: 35px;
+  padding-right: 200px;
+}
+
+.input {
+  width: 250px;
 }
