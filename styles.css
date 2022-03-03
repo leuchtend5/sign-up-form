@@ -82,11 +82,11 @@ img:nth-child(1) {
   font-size: 0.8rem;
 }
 
-a {
+.credit > a {
   color: var(--border-color);
 }
 
-a:visited {
+.credit > a:visited {
   color: var(--border-color);
 }
 
@@ -165,6 +165,43 @@ input:focus {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+button {
+  width: 180px;
+  height: 40px;
+  color: whitesmoke;
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+button:active {
+  filter: brightness(80%);
+}
+
 .bot-part {
   margin-top: 30px;
+}
+
+.bot-part > p > a:visited {
+  color: var(--btn-color);
+}
+
+.bot-part > p > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bot-part > p > a:hover {
+  filter: brightness(70%);
+}
+
+.bot-part > p {
+  font-family: my-font;
+  font-size: 0.9rem;
 }
