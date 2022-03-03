@@ -32,6 +32,7 @@ body {
 
 .background {
   position: relative;
+  height: 100vh;
 }
 
 /* resize the big image */
@@ -71,12 +72,22 @@ img:nth-child(1) {
 
 /* text for the credit image */
 .credit {
-  color: white;
+  color: var(--border-color);
   width: 100%;
   text-align: center;
   position: absolute;
   bottom: 0;
-  margin: 0;
+  margin-bottom: 5px;
+  font-family: font-form;
+  font-size: 0.8rem;
+}
+
+a {
+  color: var(--border-color);
+}
+
+a:visited {
+  color: var(--border-color);
 }
 
 /* set the logo, transparent background, and odin text position */
@@ -92,10 +103,6 @@ img:nth-child(1) {
   align-items: center;
   width: 100%;
   justify-content: center;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* styling the text in top part */
@@ -144,6 +151,20 @@ label {
   padding-right: 120px;
 }
 
-.input {
-  width: 250px;
+input {
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  padding: 5px;
+  height: 0.8rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bot-part {
+  margin-top: 30px;
 }
