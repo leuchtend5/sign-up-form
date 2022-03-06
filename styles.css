@@ -144,6 +144,7 @@ label {
   letter-spacing: 0.1rem;
 }
 
+/* add some space between the left image and the form */
 .top-part,
 .form,
 .bot-part {
@@ -151,6 +152,7 @@ label {
   padding-right: 120px;
 }
 
+/* styling the form input */
 input {
   border-radius: 3px;
   border: 1px solid var(--border-color);
@@ -159,12 +161,25 @@ input {
   height: 0.8rem;
 }
 
+::placeholder {
+  opacity: 20%;
+}
+
 input:focus {
   outline: none;
   border: 1px solid blue;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus:invalid {
+  border: 1px solid red;
+}
+
+/* styling the submit button */
 button {
   width: 180px;
   height: 40px;
@@ -184,6 +199,7 @@ button:active {
   filter: brightness(80%);
 }
 
+/* styling the bot part and the log in text */
 .bot-part {
   margin-top: 30px;
 }

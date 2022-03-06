@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/script/script.js"></script>
+    <script src="/script/script.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Sign Up</title>
   </head>
@@ -42,30 +42,62 @@
         </div>
         <div class="form">
           <p>Let's do this!</p>
-          <form action="" method="post">
+          <form id="my-form" action="" method="post">
             <div class="input">
               <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" name="first-name" required />
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="error"
+                placeholder="John"
+                minlength="2"
+                required
+              />
+              <div class="error-text"></div>
             </div>
 
             <div class="input">
               <label for="last-name">LAST NAME</label>
-              <input type="text" id="last-name" name="last-name" required />
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="error"
+                placeholder="Doe"
+                minlength="2"
+                required
+              />
+              <div class="error-text"></div>
             </div>
 
             <div class="input">
               <label for="email">EMAIL</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="error"
+                placeholder="myemail@gmail.com"
+                pattern="([a-zA-Z0-9\-\\_\.]+)@([a-zA-Z]+).(.+)"
+                required
+              />
+              <div class="error-text"></div>
             </div>
 
             <div class="input">
               <label for="phone-number">PHONE NUMBER</label>
               <input
-                type="text"
+                type="tel"
                 id="phone-number"
                 name="phone-number"
+                class="error"
+                placeholder="0812345678910"
+                minlength="11"
+                maxlength="12"
                 required
               />
+              <div class="error-text"></div>
             </div>
 
             <div class="input">
@@ -75,8 +107,10 @@
                 id="password"
                 name="password"
                 class="error"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z\d]{8,}$"
                 required
               />
+              <div class="error-text"></div>
             </div>
 
             <div class="input">
@@ -88,11 +122,12 @@
                 class="error"
                 required
               />
+              <div class="error-text"></div>
             </div>
           </form>
         </div>
         <div class="bot-part">
-          <button type="submit">Create Account</button>
+          <button type="submit" form="my-form">Create Account</button>
           <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>
