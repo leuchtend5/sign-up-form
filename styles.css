@@ -50,14 +50,14 @@ img:nth-child(1) {
 /* the transparent bg in image */
 .transparent-bg {
   background-color: black;
-  height: 150px;
+  height: 120px;
   width: 100%;
   opacity: 45%;
 }
 
 /* resize the logo */
 .logo-text > img {
-  width: 100px;
+  width: 80px;
   height: auto;
   padding-top: 10px;
 }
@@ -116,7 +116,7 @@ img:nth-child(1) {
 }
 
 .top-part > p:nth-child(3) {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .top-part > p,
@@ -128,7 +128,7 @@ img:nth-child(1) {
 
 .form {
   background-color: white;
-  padding: 5px 0 40px 0;
+  padding: 5px 0 10px 0;
 }
 
 form {
@@ -149,7 +149,7 @@ label {
 .form,
 .bot-part {
   padding-left: 35px;
-  padding-right: 20px;
+  padding-right: 35px;
 }
 
 /* styling the form input */
@@ -240,4 +240,20 @@ ul {
 
 #error-pwc {
   color: red;
+}
+
+@media screen and (max-width: 1022px) {
+  .top-part > p:nth-child(1) {
+    margin-top: 10px;
+  }
+  .top-part > p:nth-child(3) {
+    margin-bottom: 10px;
+  }
+  .form > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  form {
+    gap: 20px;
+  }
 }
