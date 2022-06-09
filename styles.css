@@ -1,16 +1,16 @@
 @font-face {
   font-family: font-logo;
-  src: url(/font/Norse-Bold.otf);
+  src: url(font/Norse-Bold.otf);
 }
 
 @font-face {
   font-family: font-form;
-  src: url(/font/Roboto/Roboto-Light.ttf);
+  src: url(font/Roboto/Roboto-Light.ttf);
 }
 
 @font-face {
   font-family: my-font;
-  src: url(/font/Roboto/Roboto-Medium.ttf);
+  src: url(font/Roboto/Roboto-Medium.ttf);
 }
 
 :root {
